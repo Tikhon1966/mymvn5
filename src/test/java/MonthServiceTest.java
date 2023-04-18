@@ -1,6 +1,6 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import ru.netology.mymvn5.services.MonthService;
+import ru.netology.services.MonthService;
 
 public class MonthServiceTest {
     @Test
@@ -16,7 +16,7 @@ public class MonthServiceTest {
         // вызываем целевой метод
         int actual = service.calculate(income, expences, threshold);
 
-        // производим проверку (сравниваем ожидаемый и фактический результат
+        // производим проверку (сравниваем ожидаемый и фактический результат)
         Assertions.assertEquals(expected, actual);
     }
 
